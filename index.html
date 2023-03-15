@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodaja meda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="" />
+            </a>
+          </div>
+          <nav class="menu_content">
+            <ul>
+              <li>
+                <a href="index.html">Pocetna</a>
+              </li>
+              <li>
+                <a href="vrste-meda.html">Vrste meda</a>
+              </li>
+              <li>
+                <a href="lokacije.html">Lokacije</a>
+              </li>
+              <li>
+                <a href="autor.html">Autor</a>
+              </li>
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <section class="overlay">
+      <div class="overlay_text">
+        <h1 class="section_title">Prodaja meda</h1>
+        <p>Sve informacije o medu možete naći ovde.</p>
+      </div>
+    </section>
+    <section id="players" class="players">
+      <!-- <h1 class="section_title" id="naslov">Vrste meda</h1> -->
+      <div class="cards">
+        <div class="player_card">
+          <p class="player_name">Livadski</p>
+          <img class="player_picture" src="images/livadski.jpg" alt="" />
+          <div class="player_info">
+            <div class="team">
+              Lepi livadski med, jedan je od nasih favorita.
+            </div>
+          </div>
+        </div>
+        <div class="player_card">
+          <p class="player_name">Šumski</p>
+          <img class="player_picture" src="images/šumski.jpg" alt="" />
+          <div class="player_info">
+            <div class="team">Lepi šumski med, iz nasih domacih suma.</div>
+          </div>
+        </div>
+        <div class="player_card">
+          <p class="player_name">Mešoviti</p>
+          <img class="player_picture" src="images/mešoviti.jpg" alt="" />
+          <div class="player_info">
+            <div class="team">
+              Lepi mešoviti med, najprodavaniji nas proizvod
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="maps" id="maps">
+      <!-- <h1 class="section_title" class="naslov">Lokacije odakle pravimo med</h1> -->
+      <div class="maps_container">
+        <div class="maps_text">
+          <div class="maps_title">Kovin, Vojvodina</div>
+          <div class="maps_abstract">
+            <p class="txt">
+              Naselje Kovin je sedište istoimene opštine, u Vojvodini, u južnom
+              Banatu, na pedesetak kilometara od Beograda. Područje je smešteno
+              između Pančeva, Alibunara, Vršca, Bele Crkve, a na jugu je
+              ograničeno rekom Dunav. Pristanište u Kovinu nalazi se na Dunavcu,
+              rukavcu najveće evropske reke..
+            </p>
+          </div>
+        </div>
+        <div class="maps_image">
+          <img src="images/Kovin.png" alt="" />
+        </div>
+      </div>
+      <div class="maps_container">
+        <div class="maps_text kovin">
+          <div class="maps_title">Šabac, Srbija</div>
+          <div class="maps_abstract">
+            <p class="txt">
+              Šabac je grad u zapadnoj Srbiji, smešten na obalama reke Save. Sa
+              oko 50.000 stanovnika, administrativni je centar Mačvanskog
+              okruga. Grad ima bogatu istoriju, koja datira još od antičkih
+              vremena, i tokom vekova je bio pod vlašću raznih imperija.
+            </p>
+          </div>
+        </div>
+        <div class="maps_image">
+          <img src="images/Sabac.png" alt="" />
+        </div>
+      </div>
+      <div class="maps_container">
+        <div class="maps_text futog">
+          <div class="maps_title">Futog, Bačka</div>
+          <div class="maps_abstract">
+            <p class="txt">
+              Futog je malo selo koje se nalazi severno od Novog Sada, u
+              severnom delu Vojvodine u Srbiji. Sa populacijom od oko 10.000
+              ljudi, to je mirno i šarmantno mesto sa bogatom istorijom koja
+              datira još iz srednjeg veka..
+            </p>
+          </div>
+        </div>
+        <div class="maps_image">
+          <img src="images/Futog.png" alt="" />
+        </div>
+      </div>
+    </section>
+   
+    <div class="container" id="tickets">
+      <h1 class="font_title">
+        Prijava potencijalne kupovine meda imate priliku da popunite našu formu
+        dole prikazanu
+      </h1>
+      <form action="#">
+        <label for="fname">Ime</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Vaše ime.."
+        />
+
+        <label for="lname">Prezime</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Vaše prezime.."
+        />
+
+        <label for="country">Regija</label>
+        <select id="country" name="zemlja">
+          <option value="Beograd">Beograd</option>
+          <option value="Banat">Banat</option>
+          <option value="Bačka">Bačka</option>
+          <option value="Srem">Srem</option>
+          <option value="Centralna">Centralna Srbija</option>
+        </select>
+
+        <label for="subject">Prijava</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 100px"
+        ></textarea>
+
+        <input type="button" value="Posalji" id="dugme" />
+      </form>
+    </div>
+    <footer>
+      <div class="footer_text">
+        Sva prava zadržana &copy; Petar Martinovic 2023
+      </div>
+    </footer>
+  </body>
+</html>

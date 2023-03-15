@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodaja meda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
+        <div class="navbar">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class="menu_content">
+              <ul>
+                <li>
+                  <a href="index.html">Pocetna</a>
+                </li>
+                <li>
+                  <a href="vrste-meda.html">Vrste meda</a>
+                </li>
+                <li>
+                  <a href="lokacije.html">Lokacije</a>
+                </li>
+                <li>
+                  <a href="autor.html">Autor</a>
+                </li>
+                <li>
+                  <a href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+    </div>
+    <section class="overlay">
+      <div class="overlay_text">
+        <h1 class="section_title">Prodaja meda</h1>
+        <p>Sve informacije o medu možete naći ovde.</p>
+      </div>
+    </section>
+    <div class="container" id="tickets">
+        <h1 class="font_title">
+          Prijava potencijalne kupovine meda imate priliku da popunite našu formu
+          dole prikazanu
+        </h1>
+        <form action="#">
+          <label for="fname">Ime</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Vaše ime.."
+          />
+  
+          <label for="lname">Prezime</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Vaše prezime.."
+          />
+  
+          <label for="country">Regija</label>
+          <select id="country" name="zemlja">
+            <option value="Beograd">Beograd</option>
+            <option value="Banat">Banat</option>
+            <option value="Bačka">Bačka</option>
+            <option value="Srem">Srem</option>
+            <option value="Centralna">Centralna Srbija</option>
+          </select>
+  
+          <label for="subject">Prijava</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 100px"
+          ></textarea>
+  
+          <input type="button" value="Posalji" id="dugme" />
+        </form>
+      </div>
+    <footer>
+        <div class="footer_text">
+          Sva prava zadržana &copy; Petar Martinovic 2023
+        </div>
+      </footer>
+    </body>
+  </html>
+  
